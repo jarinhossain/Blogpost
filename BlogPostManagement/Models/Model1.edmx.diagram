@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f0d0685dfabf45bd9f237e5842793fb8" Name="Diagram1">
+        <EntityTypeShape EntityType="BlogPostModel.Blog" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogPostModel.Comment" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogPostModel.Comment_Reaction" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogPostModel.User" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="BlogPostModel.FK_Blog_User" ManuallyRouted="false" />
+        <AssociationConnector Association="BlogPostModel.FK_Comment_Blog" ManuallyRouted="false" />
+        <AssociationConnector Association="BlogPostModel.FK_Comment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="BlogPostModel.FK_Comment_Reaction_User" ManuallyRouted="false" />
+        <AssociationConnector Association="BlogPostModel.FK_Comment_Reaction_Comment1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
